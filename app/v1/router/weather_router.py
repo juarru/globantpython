@@ -3,7 +3,7 @@ import datetime
 from fastapi import APIRouter
 from fastapi import status
 
-from v1.utils.weather_utils import create_json_response
+from ..utils.weather_utils import create_json_response
 
 router = APIRouter(prefix="/api/v1")
 
