@@ -1,2 +1,2 @@
 # globantpython
-Juan Arillo challenge for globate
+Juan Arillo challenge for globant
