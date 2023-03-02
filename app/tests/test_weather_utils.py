@@ -1,4 +1,4 @@
-from app.v1.utils.weather_utils import convert_celsius, get_external_weather, generate_response_json
+from app.utils.weather_utils import convert_celsius, get_external_weather, generate_response_json
 
 
 def test_convert_celsius_ok():
