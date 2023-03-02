@@ -1,6 +1,8 @@
 import requests
 import json
 import os
+import datetime as dat
+from cachier import cachier
 from datetime import datetime
 from dotenv import load_dotenv
 load_dotenv()
@@ -12,6 +14,8 @@ def create_json_response(city: str, country: str):
 
     return response_json
 
+
+@cachier(stale_after=dat.timedelta(minutes=2))
 def get_external_weather(city: str, country: str):
     payload = {}
     headers = {}
