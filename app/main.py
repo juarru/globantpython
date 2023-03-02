@@ -1,8 +1,5 @@
 from fastapi import FastAPI
+from v1.router.weather_router import router as weather_router
 
 app = FastAPI()
-
-
-@app.get('/')
-def home():
-    return {"message": "Hello World"}
+app.include_router(weather_router)
